@@ -26,7 +26,17 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="3d3cb0cc-6945-4951-8e32-dad1c757a76f">
+        <schema name="bootcamp" object-types="table, view, procedure, function" />
+        <schema name="cinema" object-types="table, view, procedure, function" />
+        <schema name="classicmodels" object-types="table, view, procedure, function" />
+        <schema name="footbal-team" object-types="table, view, procedure, function" />
+        <schema name="information_schema" object-types="table, view, procedure, function" />
+        <schema name="mysql" object-types="table, view, procedure, function" />
+        <schema name="new-shelter" object-types="table, view, procedure, function" />
+        <schema name="performance_schema" object-types="table, view, procedure, function" />
         <schema name="shelter" object-types="table, view, procedure, function" />
+        <schema name="sys" object-types="table, view, procedure, function" />
+        <schema name="world" object-types="table, view, procedure, function" />
       </connection>
     </loaded-nodes>
   </component>
