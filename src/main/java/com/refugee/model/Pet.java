@@ -1,19 +1,28 @@
 package com.refugee.model;
 
+import lombok.*;
+import org.springframework.data.annotation.Id;
+
+import javax.persistence.*;
+import java.util.List;
+
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Table(name ="Pet")
 public class Pet {
-    private String type;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    @Enumerated
+    private PetType petType;
     private String name;
-
-    public Pet(String type, String name) {
-        this.type = type;
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getType() {
-        return type;
-    }
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "shelter_id", nullable = false)
+    private Shelter shelter;
+    @OneToMany(mappedBy = "pet")
+    private List<Feed> feedList;
 }
