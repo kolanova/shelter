@@ -23,6 +23,7 @@ public class Pet {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "shelter_id", nullable = false)
     private Shelter shelter;
+    //One to many relationship pet with feed
     @OneToMany(mappedBy = "pet")
     private List<Feed> feedList;
 }

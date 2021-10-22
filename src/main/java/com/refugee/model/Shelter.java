@@ -21,6 +21,7 @@ public class Shelter {
     private ShelterTypes shelterTypes;
     private String name;
     private String location;
+    //One to many relationship shelter with pet
     @OneToMany(mappedBy = "shelter", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Pet> petList;
 
