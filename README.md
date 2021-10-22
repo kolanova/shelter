@@ -14,9 +14,9 @@ This API has 5 main classes (1 additional *PetFeedId) and 3 types of 3 of them, 
 * PetFeedId
 * Shelter
 #### *Enums*:
-** FoodType
-** PetType
-** ShelterTypes
+**FoodType
+**PetType
+**ShelterTypes
 
 To define a better method of storing, updating, and extracting the data stored from JAVA applications in the backend we use 4 repositories for our application purpose
 ### *Repositories*
