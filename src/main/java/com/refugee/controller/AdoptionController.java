@@ -2,11 +2,8 @@ package com.refugee.controller;
 
 import com.refugee.controller.request.CreatePetFeedRequest;
 import com.refugee.controller.request.CreatePetRequest;
-import com.refugee.controller.request.CreateShelterRequest;
 import com.refugee.model.Pet;
-import com.refugee.model.Shelter;
 import com.refugee.service.PetService;
-import com.refugee.service.ShelterService;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
